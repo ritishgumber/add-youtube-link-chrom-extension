@@ -3,13 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "cloudboost": "^2.0.264"
+    "cloudboost": "^2.0.264",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ritish Gumber",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritishgumber/cloudboost-test-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ritishgumber/cloudboost-test-app/issues"
+  },
+  "homepage": "https://github.com/ritishgumber/cloudboost-test-app#readme"
 }
