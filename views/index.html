@@ -1,15 +1,38 @@
 <html>
-<html ng-app="ritishResume" ng-controller="myCtrl">
-<head>
-<meta charset="ISO-8859-1">
-<meta charset="utf-8">
-<meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
-<title>test app</title>
-</head>
-<body>
-    Hello
-    <script src="https://cloudboost.io/js-sdk/cloudboost.js"></script>
+<html>
 
+<head>
+    <meta charset="ISO-8859-1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1">
+    <title>test app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body ng-app="app" ng-controller="myCtrl" ng-init='getAllRecords()'>
+    <table class="table table-bordered">
+        <tr>
+            <th class="col-md-3"> Title </th>
+            <th class="col-md-3">  <i class="fa fa-eye"></i></th>
+            <th class="col-md-3"> <i class="fa fa-thumbs-up like-icon"></i></th>
+            <th class="col-md-3">  <i class="fa fa-thumbs-down dislike-icon"></i></th>
+        </tr>
+        <tr ng-show="videoData.length!=0" ng-repeat="data in videoData">
+            <td class="col-md-3"><a ng-href={{"https://www.youtube.com/watch?v="+data.id}}>{{data.title}}</a></td>
+            <td class="col-md-3">{{data.viewCount}}</td>
+            <td class="col-md-3">{{data.likeCount}}</td>
+            <td class="col-md-3">{{data.dislikeCount}}</td>
+        </tr>
+        <tr ng-hide="videoData.length!=0">
+            <td colspan="4">No Data found</td>
+        </tr>
+    </table>
 </body>
 
 
