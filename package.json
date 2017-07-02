@@ -18,10 +18,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ritishgumber/add-youtube-link-chrom-extension.git"
+    "url": "git+https://github.com/ritishgumber/add-youtube-link-chrome-extension-server.git"
   },
   "bugs": {
-    "url": "https://github.com/ritishgumber/add-youtube-link-chrom-extension/issues"
+    "url": "https://github.com/ritishgumber/add-youtube-link-chrome-extension-server/issues"
   },
-  "homepage": "https://github.com/ritishgumber/add-youtube-link-chrom-extension#readme"
+  "homepage": "https://github.com/ritishgumber/add-youtube-link-chrome-extension-server#readme"
 }
